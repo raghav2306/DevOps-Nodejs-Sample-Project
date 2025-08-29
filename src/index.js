@@ -1,6 +1,7 @@
 import express from "express";
 
 const app = express();
+const PORT = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
   res
@@ -8,6 +9,6 @@ app.get("/", (req, res) => {
     .json({ success: true, message: "Welcome to your first node.js app" });
 });
 
-app.listen(4000, () => {
+app.listen(PORT, () => {
   console.log("Server is running on port 4000");
 });
