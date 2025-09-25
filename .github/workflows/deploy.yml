@@ -8,6 +8,7 @@ on:                 # Defines when this workflow should run
     branches:
       - main
 
+      
 jobs:               # A workflow is made of one or more jobs
   build:            # Name of the job
     runs-on: ubuntu-latest   # The environment where job will run (GitHub-hosted runner)
