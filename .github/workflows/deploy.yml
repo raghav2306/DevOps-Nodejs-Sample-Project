@@ -33,6 +33,7 @@ jobs: # A workflow is made of one or more jobs
   deploy:
     name: Deploy to EC2
     runs-on: ubuntu-latest
+    needs: build
 
     steps:
       - name: Checkout code
