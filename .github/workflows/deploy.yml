@@ -49,6 +49,6 @@ jobs: # A workflow is made of one or more jobs
         run: |
           ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
             cd ~/DevOps-Nodejs-Sample-Project
-            git pull origin master
+            git pull origin main
             npm install    # or your build/deploy steps
           EOF
