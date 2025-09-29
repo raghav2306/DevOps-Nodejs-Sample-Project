@@ -67,4 +67,5 @@ jobs: # A workflow is made of one or more jobs
             mkdir -p ~/deploy/releases
             tar -xzf /tmp/release.tar.gz -C ~/deploy/releases
             pm2 restart ~/deploy/releases/build/src/index.js
+            rm /tmp/release.tar.gz
           EOF
