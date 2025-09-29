@@ -52,4 +52,5 @@ jobs: # A workflow is made of one or more jobs
             cd ~/DevOps-Nodejs-Sample-Project
             git pull origin main
             npm install    # or your build/deploy steps
+            pm2 restart build/src/index.js
           EOF
