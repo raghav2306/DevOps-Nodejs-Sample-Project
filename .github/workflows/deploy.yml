@@ -30,11 +30,7 @@ jobs: # A workflow is made of one or more jobs
       - name: Build project # Step 5: Build application
         run: npm run build
       - name: Prepare release artifact
-        run: |
-          # if you only need the build directory
-          # tar -czf release.tar.gz build
-          # OR, if your app needs production node_modules as well:
-          npm ci --production && tar -czf release.tar.gz build node_modules package.json
+        run: npm ci --production && tar -czf release.tar.gz build node_modules package.json
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
