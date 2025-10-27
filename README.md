@@ -179,7 +179,7 @@ docker run -p 3000:3000 sample-express-ts
 
 ---
 
-## ✅ Summary
+## Summary
 
 * `npm run dev` → run in development
 * `npm run build` → compile TypeScript
